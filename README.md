@@ -18,8 +18,8 @@ Basically, the lab is for marking lane and drivable area on experimental video p
 
 Below are clips of the results:
 
-<img src="./writeup/project.gif" alt="Drawing" style="width: 300px;"/>
-<img src="./writeup/challenge.gif" alt="Drawing" style="width: 300px;"/>
+<img src="./writeup/project.gif" alt="Drawing" style="width: 200px;"/>
+<img src="./writeup/challenge.gif" alt="Drawing" style="width: 200px;"/>
 
 #### Map
 * All the tools is stored in [./utils](./utils):  
@@ -157,7 +157,7 @@ I've examined HSV, BGR, HLS, YUV and grayscale channels of the test images. Amon
 ![png](./writeup/output_19_0.png)
 
 
-* grayscale
+* grayscale  
 ![png](./writeup/output_20_0.png)
 
 
