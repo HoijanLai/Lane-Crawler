@@ -163,11 +163,13 @@ class tracker:
         lane_l = np.polyval(l_fit, y_cord)
         lane_r = np.polyval(r_fit, y_cord)
 
-        pts_l = np.array([np.vstack([lane_l, y_cord]).T])
-        pts_r = np.array([np.flipud(np.vstack([lane_r, y_cord]).T)])
 
-        pts = np.hstack((pts_l, pts_r))
-        cv2.fillPoly(out_img, np.int_(pts), [0, 100, 0])
+        if not win_color:
+            pts_l = np.array([np.vstack([lane_l, y_cord]).T])
+            pts_r = np.array([np.flipud(np.vstack([lane_r, y_cord]).T)])
+
+            pts = np.hstack((pts_l, pts_r))
+            cv2.fillPoly(out_img, np.int_(pts), [0, 100, 0])
 
         # draw red on left
         out_img[sy[l_lane_idc], sx[l_lane_idc]] = RED
