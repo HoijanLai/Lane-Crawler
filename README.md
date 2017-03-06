@@ -333,7 +333,7 @@ For the challenge video, we should refit the perspective transformation and intr
 challenge_trk = tracker(15, 9, 20, mpp_y, frac = 2, curv_count = 1570)
 challenge_pipe = pipeline(undist_eye, challenge_eye, challenge_trk, [Cup, masking])
 ```
-Please check the output video [here](https://www.youtube.com/watch?v=hwuhuSPlFow)
+Please check the output video [here](https://www.youtube.com/watch?v=iB5Mxc0mzfo)
 
 #### Using Machine Learning/Deep Learning
 We can of course use convolution neural network to learn the polynomial model directly or just learn the perspective transform automatically and still use other part of the pipeline.
